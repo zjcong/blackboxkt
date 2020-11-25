@@ -23,11 +23,6 @@ sealed class Problem {
     abstract operator fun invoke(arguments: DoubleArray): Double
 
     /**
-     * Unconstrained problem
-     */
-    abstract class UnconstrainedProblem : Problem()
-
-    /**
      * Problem with arbitrary constraints
      */
     abstract class ConstrainedProblem : Problem() {
