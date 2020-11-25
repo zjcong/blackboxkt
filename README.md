@@ -1,11 +1,9 @@
 # Blackbox.kt
 
-A collection of optimization test functions written in Kotlin
-
----
-
 __Blackbox.kt__ is a collection of mathematical optimization test 
 functions written in kotlin.
+
+---
 
 ## Functions: 
 
