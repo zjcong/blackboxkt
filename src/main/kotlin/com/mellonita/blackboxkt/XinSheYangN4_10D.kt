@@ -2,10 +2,11 @@ package com.mellonita.blackboxkt
 
 import kotlin.math.*
 
+@Suppress("ClassName")
 object XinSheYangN4_10D : Problem.BoxConstrainedProblem() {
     override val name: String = "10D Xin-She Yang N.4 Function"
     override val dimensionality: Int = 10
-    override val bounds: Array<ClosedFloatingPointRange<Double>> = Array(dimensionality) { (-10.0).rangeTo(10.0) }
+    override val bounds: Array<ClosedFloatingPointRange<Double>> = quickBounds(-10.0, 10.0)
 
     override val globalMinima: Double = -1.0
 

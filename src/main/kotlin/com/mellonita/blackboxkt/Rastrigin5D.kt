@@ -13,7 +13,7 @@ object Rastrigin5D : Problem.BoxConstrainedProblem() {
 
     override val dimensionality: Int = 5
 
-    override val bounds: Array<ClosedFloatingPointRange<Double>> = Array(dimensionality) { (-5.12).rangeTo(5.12) }
+    override val bounds: Array<ClosedFloatingPointRange<Double>> = quickBounds(-5.12, 5.12)
 
     override val globalMinima: Double = 0.0
 

@@ -7,7 +7,7 @@ object CrossInTray : Problem.BoxConstrainedProblem() {
 
     override val dimensionality: Int = 2
 
-    override val bounds: Array<ClosedFloatingPointRange<Double>> = Array(2) { (-10.0).rangeTo(10.0) }
+    override val bounds: Array<ClosedFloatingPointRange<Double>> = quickBounds(-10.0, 10.0)
 
     override val globalMinima: Double = -2.06261
 

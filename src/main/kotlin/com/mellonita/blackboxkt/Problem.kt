@@ -42,6 +42,11 @@ sealed class Problem {
 
         abstract val bounds: Array<ClosedFloatingPointRange<Double>>
 
+
+        protected fun quickBounds(start: Double, end: Double): Array<ClosedFloatingPointRange<Double>> {
+            return Array(dimensionality) { start.rangeTo(end) }
+        }
+
         /**
          * Check bound
          */
